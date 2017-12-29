@@ -1,7 +1,7 @@
 <?php
 
 try {
-  $conn = new PDO("mysql:host=localhost;dbname=pacenews","root","");
+  $conn = new PDO("mysql:host=localhost;dbname=paceshop","root","");
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch (Exception $e) {

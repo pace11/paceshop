@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Kios Jersey | Pace</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -12,12 +12,15 @@
   </div>
   <nav>
     <ul>
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">Belanja</a></li>
-      <li><a href="#">Tentang</a></li>
+      <li><a href="?page=beranda">Beranda</a></li>
+      <li><a href="?page=belanja">Belanja</a></li>
+      <li><a href="?page=tentang">Tentang</a></li>
 
       <li class="login">
-        <a href="#">Masuk</a>
+        <a href="page/login.php">Masuk</a>
+      </li>
+      <li class="logout">
+        <a href="page/login.php">Masuk</a>
       </li>
     </ul>
   </nav>
@@ -26,16 +29,15 @@
       <p>Beranda / lel</p>
   </div>
   <div id="box">
-    <div class="kiri">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="kanan">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
+    <?php
+      include("content.php")
+     ?>
+  </div>
+  <div class="keranjang-title">
+      <p>Keranjang Belanja</p>
+  </div>
+  <div id="keranjang">
+    <p>Belum ada yang dibelanjakan</p>
   </div>
   <div class="footer">
     <p>copyright by | pace</p>
