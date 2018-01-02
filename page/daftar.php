@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Login</title>
- <link rel="stylesheet" type="text/css" href="loginstyle.css">
+ <title>Daftar Akun</title>
+ <link rel="stylesheet" type="text/css" href="../css/loginstyle.css">
 <!-- code by muh iriansyah putra pratama -->
 </head>
 <body>
