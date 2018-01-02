@@ -14,8 +14,7 @@
   $data = $ambiluser->fetch(PDO::FETCH_OBJ);
   if (isset($_SESSION['username'])) $id = $data->id_user;
 
-  $query = $conn->prepare("SELECT id_pesanan,id_user,deskripsi,ukuran,qty,kurir,date_in,total
-                           FROM tbl_pesanan
+  $query = $conn->prepare("SELECT * FROM tbl_pesanan
                            JOIN tbl_barang ON tbl_pesanan.id_barang=tbl_barang.id_barang
                            WHERE tbl_pesanan.id_user=:id
                            GROUP BY tbl_pesanan.id_pesanan");
@@ -29,7 +28,8 @@
     <tr>
       <th>No</th>
       <th>Id Pesanan</th>
-      <th>Id Barang</th>
+      <th>Barang</th>
+      <th>Harga</th>
       <th>Ukuran</th>
       <th>Qty</th>
       <th>Kurir</th>
@@ -44,6 +44,7 @@
             <td><?php echo $no; ?></td>
             <td><?php echo $value['id_pesanan'] ?></td>
             <td><?php echo $value['deskripsi'] ?></td>
+            <td><?php echo $value['harga'] ?></td>
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>

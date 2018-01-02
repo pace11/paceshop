@@ -22,12 +22,13 @@
               $alamat = $_POST['alamat'];
               $username = $_POST['username'];
               $password = $_POST['password'];
+              $status = 'user';
 // code by muh iriansyah putra pratama
               try {
               $conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-              $pdo = $conn->prepare('INSERT INTO tbl_users (nama_lengkap, email, username, password, alamat, no_hp)
-                          values (:nama_lengkap, :email, :username, :password, :alamat, :no_hp)');
-              $insertdata = array(':nama_lengkap' => $namalengkap, ':email' => $email, 'username' => $username, 'password' => $password, ':alamat' => $alamat, ':no_hp' => $nohp);
+              $pdo = $conn->prepare('INSERT INTO tbl_users (nama_lengkap, email, username, password, alamat, no_hp,title)
+                          values (:nama_lengkap, :email, :username, :password, :alamat, :no_hp, :title)');
+              $insertdata = array(':nama_lengkap' => $namalengkap, ':email' => $email, 'username' => $username, 'password' => $password, ':alamat' => $alamat, ':no_hp' => $nohp, ':title' => $status);
               $pdo->execute($insertdata);
 // code by muh iriansyah putra pratama
               echo "<center><button class='tombol-biru'>pendaftaran berhasil</button></center>";

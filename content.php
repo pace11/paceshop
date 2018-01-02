@@ -13,7 +13,9 @@
   elseif ($page == "belanja_detailpro") include("page/user/belanja_detailpro.php");
   elseif ($page == "keranjang_hapus") include("page/user/keranjang_hapus.php");
   elseif ($page == "pesanan") include("page/user/pesanan.php");
-
+  elseif ($page == "profil") include("page/user/profil/profil.php");
+  elseif ($page == "profil_ubah") include("page/user/profil/profil_ubah.php");
+  elseif ($page == "profil_ubahpro") include("page/user/profil/profil_ubahpro.php");
 
 //---------------------------- ADMIN ---------------------------
   elseif ($page == "barang") include("page/admin/barang/barang.php");
@@ -25,6 +27,7 @@
   elseif ($page == "transaksi") include("page/admin/transaksi/transaksi.php");
   elseif ($page == "transaksi_detail") include("page/admin/transaksi/transaksi_detail.php");
   elseif ($page == "pesan") include("page/admin/pesan/pesan.php");
+  elseif ($page == "user") include("page/admin/user/user.php");
 
 
 // code by muh iriansyah putra pratama
