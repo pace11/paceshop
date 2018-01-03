@@ -28,6 +28,9 @@
   elseif ($page == "transaksi_detail") include("page/admin/transaksi/transaksi_detail.php");
   elseif ($page == "pesan") include("page/admin/pesan/pesan.php");
   elseif ($page == "user") include("page/admin/user/user.php");
+  elseif ($page == "user_edit") include("page/admin/user/user_edit.php");
+  elseif ($page == "user_editpro") include("page/admin/user/user_editpro.php");
+  elseif ($page == "user_hapus") include("page/admin/user/user_hapus.php");
 
 
 // code by muh iriansyah putra pratama

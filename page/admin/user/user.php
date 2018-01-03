@@ -20,7 +20,6 @@
       <th>Nama</th>
       <th>Email</th>
       <th>Username</th>
-      <th>Password</th>
       <th>Alamat</th>
       <th>No HP</th>
       <th>Aksi</th>
@@ -33,7 +32,6 @@
             <td><?php echo $value['nama_lengkap'] ?></td>
             <td><?php echo $value['email'] ?></td>
             <td><?php echo $value['username'] ?></td>
-            <td><?php echo "******"; ?></td>
             <td><?php echo $value['alamat'] ?></td>
             <td><?php echo $value['no_hp'] ?></td>
             <td>
