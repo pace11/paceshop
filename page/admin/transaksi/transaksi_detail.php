@@ -51,6 +51,10 @@
         <td><?php echo $data->email; ?></td>
      </tr>
      <tr>
+        <td>No HP</td>
+        <td><?php echo $data->no_hp; ?></td>
+     </tr>
+     <tr>
         <td>Alamat</td>
         <td><?php echo $data->alamat; ?></td>
      </tr>

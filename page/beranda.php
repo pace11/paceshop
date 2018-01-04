@@ -46,7 +46,7 @@
     <?php
     if ($sisa > 0){
     if (isset ($_SESSION['username']) != ""){ ?>
-      <a class="link"href="?page=belanja_detail&id=<?php echo $value['id_barang']; ?>">Beli</a>
+      <a class="link"href="?page=belanja_detail&id=<?php echo $value['id_barang']; ?>&st=<?php echo $sisa; ?>">Beli</a>
     <?php }} ?>
     </td>
   <?php

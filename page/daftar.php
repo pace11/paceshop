@@ -56,10 +56,10 @@
             </p>
             <hr>
             <p>
-                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="username" maxlength="6" placeholder="Username" required>
             </p>
             <p>
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="password" maxlength="6" placeholder="Password" required>
             </p>
             <p>
                 <input type="submit" name="submit" value="DAFTAR">

@@ -14,6 +14,7 @@
     $data = $ambiluser->fetch(PDO::FETCH_OBJ);
 
     $id = $_GET['id'];
+    $sisa = $_GET['st'];
     $result = $conn->prepare("SELECT * FROM tbl_barang WHERE id_barang =:id");
     $result->bindparam(':id', $id);
     $result->execute();
@@ -52,7 +53,8 @@
     <tr>
       <td>Stok</td>
       <td>
-        <?php echo $row->stok ?>
+        <input type="hidden" name="sisa" value="<?php echo $sisa ?>">
+        <?php echo $sisa ?>
       </td>
     </tr>
 <!-- code by muh iriansyah putra pratama -->
@@ -73,7 +75,7 @@
     <tr>
       <td>Qty</td>
       <td>
-        <input type="number" name="qty">
+        <input type="number" name="qty" min="1">
       </td>
     </tr>
 <!-- code by muh iriansyah putra pratama -->

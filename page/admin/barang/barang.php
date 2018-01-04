@@ -21,7 +21,7 @@
   <a href="?page=tambah_barang"class="tombol-biru">Tambah Barang</a><br><br>
   <table class="news">
     <tr>
-      <th>No.</th>
+      <th>Id Barang</th>
       <th>Gambar</th>
       <th>Deskripsi</th>
       <th>Harga</th>
@@ -30,10 +30,9 @@
       <th>Aksi</th>
     </tr>
     <?php
-    $no=1;
     foreach ($data as $value): ?>
         <tr>
-            <td><?php echo $no++; ?></td>
+            <td><?php echo $value['id_barang'] ?></td>
             <td>
               <img src="img/jersey/<?= $value['nama_image'];?>" width="80">
             </td>

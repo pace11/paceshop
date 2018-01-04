@@ -20,6 +20,12 @@
 
   <table class="article">
     <tr>
+      <td>Id User</td>
+      <td>
+        <input type="button" name="id_user" value="<?php echo $row->id_user ?>">
+      </td>
+    </tr>
+    <tr>
       <td>Nama Lengkap</td>
       <td>
         <input type="hidden" name="id_user" value="<?php echo $row->id_user ?>">

@@ -17,7 +17,6 @@
 
   <table class="news">
     <tr>
-      <th>No</th>
       <th>Id Pesanan</th>
       <th>Pemesan</th>
       <th>Id Barang</th>
@@ -29,12 +28,10 @@
       <th>Status</th>
     </tr>
     <?php
-    $no=1;
     foreach ($data as $value): ?>
         <tr>
-            <td><?php echo $no; ?></td>
             <td><?php echo $value['id_pesanan'] ?></td>
-            <td><?php echo $value['nama_lengkap'] ?></td>
+            <td><?php echo "(".$value['id_user'].") ".$value['nama_lengkap'] ?></td>
             <td><?php echo $value['deskripsi'] ?></td>
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
@@ -47,7 +44,6 @@
             </td>
         </tr>
     <?php
-    $no++;
     endforeach;
      ?>
   </table>

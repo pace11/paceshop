@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 02, 2018 at 11:18 AM
+-- Generation Time: Jan 04, 2018 at 10:21 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -97,8 +97,7 @@ INSERT INTO `tbl_pesanan` (`id_pesanan`, `id_user`, `id_barang`, `ukuran`, `qty`
 (19, 2, 9, 'M', 2, 'JNE', '2018-01-01', 270000),
 (20, 3, 7, 'M', 2, 'KILAT', '2018-01-02', 260000),
 (21, 5, 7, 'XL', 3, 'JNE', '2018-01-02', 390000),
-(22, 5, 2, 'L', 2, 'SICEPAT', '2018-01-02', 270000),
-(23, 5, 4, 'M', 5, 'SICEPAT', '2018-01-02', 675000);
+(22, 5, 2, 'L', 2, 'SICEPAT', '2018-01-02', 270000);
 
 -- --------------------------------------------------------
 
@@ -170,12 +169,12 @@ ALTER TABLE `tbl_barang`
 -- AUTO_INCREMENT for table `tbl_keranjang`
 --
 ALTER TABLE `tbl_keranjang`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_pesanan`
 --
 ALTER TABLE `tbl_pesanan`
-  MODIFY `id_pesanan` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_pesanan` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `tbl_users`
 --

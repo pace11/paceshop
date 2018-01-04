@@ -6,7 +6,8 @@
 
   <?php
   $status = "user";
-  include 'lib/koneksi.php';
+  include('lib/koneksi.php');
+
   $query = $conn->prepare("SELECT * FROM tbl_users WHERE title=:title");
   $query->bindparam(':title',$status);
   $query->execute();
@@ -29,7 +30,7 @@
     foreach ($data as $value): ?>
         <tr>
             <td><?php echo $no; ?></td>
-            <td><?php echo $value['nama_lengkap'] ?></td>
+            <td><?php echo "(".$value['id_user'].") ".$value['nama_lengkap'] ?></td>
             <td><?php echo $value['email'] ?></td>
             <td><?php echo $value['username'] ?></td>
             <td><?php echo $value['alamat'] ?></td>

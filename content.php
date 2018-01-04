@@ -31,6 +31,9 @@
   elseif ($page == "user_edit") include("page/admin/user/user_edit.php");
   elseif ($page == "user_editpro") include("page/admin/user/user_editpro.php");
   elseif ($page == "user_hapus") include("page/admin/user/user_hapus.php");
+  elseif ($page == "profilad") include("page/admin/profil/profil.php");
+  elseif ($page == "profilad_ubah") include("page/admin/profil/profil_ubah.php");
+  elseif ($page == "profilad_ubahpro") include("page/admin/profil/profil_ubahpro.php");
 
 
 // code by muh iriansyah putra pratama

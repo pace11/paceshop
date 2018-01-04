@@ -16,7 +16,17 @@
     $qty = $_POST['qty'];
     $kurir = $_POST['kurir'];
     $total = $harga * $qty;
+    $sisa = $_POST['sisa'];
 // code by muh iriansyah putra pratama
+
+    if ($qty > $sisa){
+      echo "<script>alert('Kuantitas pesanan melebihi sisa stok barang');window.location='?page=belanja_detail&id=$idbarang&st=$sisa'</script>";
+    }
+    elseif ($qty <= 0){
+      echo "<script>alert('Keliru dalam menginputkan kuantitas');window.location='?page=belanja_detail&id=$idbarang&st=$sisa'</script>";
+    }
+    else {
+
     try {
       $conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $pdo = $conn->prepare('INSERT INTO tbl_keranjang (id_user, id_barang, ukuran, qty, kurir, date_in, total)
@@ -32,6 +42,7 @@
     } catch (PDOexception $e) {
       print "Added data failed: " . $e->getMessage() . "<br/>";
        die();
+    }
     }
 // code by muh iriansyah putra pratama
  ?>
