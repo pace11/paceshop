@@ -1,0 +1,24 @@
+-------------- WEBSITE E-COMMERCE -------------
+
+Dibuat Oleh : 
+NAMA : MUH IRIANSYAH PUTRA PRATAMA
+NIM  : 201431299
+
+
+-----------------------------------------
+LOGIN ADMIN :  username : pace
+	       pass     : pace
+
+-----------------------------------------
+LOGIN USER  :   1) username : umar
+		   pass     : umar
+		2) username : rian27
+		   pass     : rian3
+		3) username : firman
+		   pass	    : firman
+		4) username : angga
+		   pass     : angga
+		5) username : malik
+   		   pass	    : malik
+-----------------------------------------
+link github => https://github.com/pace11/paceshop
